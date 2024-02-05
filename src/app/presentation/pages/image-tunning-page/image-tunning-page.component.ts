@@ -9,6 +9,6 @@ import {CommonModule} from "@angular/common";
   templateUrl: './image-tunning-page.component.html',
   styleUrl: './image-tunning-page.component.css'
 })
-export class ImageTunningPageComponent {
+export default  class ImageTunningPageComponent {
 
 }

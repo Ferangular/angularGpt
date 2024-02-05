@@ -9,6 +9,6 @@ import {CommonModule} from "@angular/common";
   templateUrl: './assistant-page.component.html',
   styleUrl: './assistant-page.component.css'
 })
-export class AssistantPageComponent {
+export default  class AssistantPageComponent {
 
 }

@@ -9,6 +9,6 @@ import {CommonModule} from "@angular/common";
   templateUrl: './pros-cons-stream-page.component.html',
   styleUrl: './pros-cons-stream-page.component.css'
 })
-export class ProsConsStreamPageComponent {
+export  default class ProsConsStreamPageComponent {
 
 }

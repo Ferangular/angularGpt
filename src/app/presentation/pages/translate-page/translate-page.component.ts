@@ -9,6 +9,6 @@ import {CommonModule} from "@angular/common";
   styleUrl: './translate-page.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TranslatePageComponent {
+export default  class TranslatePageComponent {
 
 }

@@ -1,5 +1,6 @@
-import { Routes } from '@angular/router';
-import {DashboardLayoutComponent} from "./presentation/layout/dashboard-layout/dashboard-layout.component";
+import {Routes} from '@angular/router';
+import DashboardLayoutComponent from "./presentation/layout/dashboard-layout/dashboard-layout.component";
+
 
 export const routes: Routes = [
   {
@@ -8,20 +9,17 @@ export const routes: Routes = [
     children: [
       {
         path: 'orthography',
-        loadComponent: () =>
-          import(
-            './presentation/pages/orthographyPage/orthographyPage.component'
-            ),
+        loadComponent: () => import('./presentation/pages/orthography-page/orthography-page.component'),
         data: {
           icon: 'fa-solid fa-spell-check',
           title: 'Ortografía',
           description: 'Corregir ortografía',
-        },
+        }
       },
       {
         path: 'pros-cons',
         loadComponent: () =>
-          import('./presentation/pages/prosConsPage/prosConsPage.component'),
+          import('./presentation/pages/pros-cons-page/pros-cons-page.component'),
         data: {
           icon: 'fa-solid fa-code-compare',
           title: 'Pros & Cons',
@@ -32,7 +30,7 @@ export const routes: Routes = [
         path: 'pros-cons-stream',
         loadComponent: () =>
           import(
-            './presentation/pages/prosConsStreamPage/prosConsStreamPage.component'
+            './presentation/pages/pros-cons-stream-page/pros-cons-stream-page.component'
             ),
         data: {
           icon: 'fa-solid fa-water',
@@ -43,7 +41,7 @@ export const routes: Routes = [
       {
         path: 'translate',
         loadComponent: () =>
-          import('./presentation/pages/translatePage/translatePage.component'),
+          import('./presentation/pages/translate-page/translate-page.component'),
         data: {
           icon: 'fa-solid fa-language',
           title: 'Traducir',
@@ -54,7 +52,7 @@ export const routes: Routes = [
         path: 'text-to-audio',
         loadComponent: () =>
           import(
-            './presentation/pages/textToAudioPage/textToAudioPage.component'
+            './presentation/pages/text-to-audio-page/text-to-audio-page.component'
             ),
         data: {
           icon: 'fa-solid fa-podcast',
@@ -66,7 +64,7 @@ export const routes: Routes = [
         path: 'audio-to-text',
         loadComponent: () =>
           import(
-            './presentation/pages/audioToTextPage/audioToTextPage.component'
+            './presentation/pages/audio-to-text-page/audio-to-text-page.component'
             ),
         data: {
           icon: 'fa-solid fa-comment-dots',
@@ -78,7 +76,7 @@ export const routes: Routes = [
         path: 'image-generation',
         loadComponent: () =>
           import(
-            './presentation/pages/imageGenerationPage/imageGenerationPage.component'
+            './presentation/pages/image-generation-page/image-generation-page.component'
             ),
         data: {
           icon: 'fa-solid fa-image',
@@ -90,7 +88,7 @@ export const routes: Routes = [
         path: 'image-tunning',
         loadComponent: () =>
           import(
-            './presentation/pages/imageTunningPage/imageTunningPage.component'
+            './presentation/pages/image-tunning-page/image-tunning-page.component'
             ),
         data: {
           icon: 'fa-solid fa-wand-magic',
@@ -102,7 +100,7 @@ export const routes: Routes = [
       {
         path: 'assistant',
         loadComponent: () =>
-          import('./presentation/pages/assistantPage/assistantPage.component'),
+          import('./presentation/pages/assistant-page/assistant-page.component'),
         data: {
           icon: 'fa-solid fa-user',
           title: 'Asistente',

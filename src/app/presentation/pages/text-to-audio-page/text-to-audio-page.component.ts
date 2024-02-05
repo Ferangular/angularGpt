@@ -9,6 +9,6 @@ import {CommonModule} from "@angular/common";
   styleUrl: './text-to-audio-page.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TextToAudioPageComponent {
+export  default class TextToAudioPageComponent {
 
 }

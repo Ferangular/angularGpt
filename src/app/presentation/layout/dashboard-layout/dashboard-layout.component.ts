@@ -8,6 +8,6 @@ import {ChangeDetectionStrategy, Component} from '@angular/core';
   styleUrl: './dashboard-layout.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class DashboardLayoutComponent {
+export  default class DashboardLayoutComponent {
 
 }

@@ -9,6 +9,6 @@ import {CommonModule} from "@angular/common";
   templateUrl: './pros-cons-page.component.html',
   styleUrl: './pros-cons-page.component.css'
 })
-export class ProsConsPageComponent {
+export default class ProsConsPageComponent {
 
 }
