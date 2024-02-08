@@ -1,12 +1,6 @@
 import { environment } from 'environments/environment';
 
-/**
- * function*
- * https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/function*#ejemplos
- * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*
- * @param prompt
- * @param abortSignal
- */
+
 export async function* prosConsStreamUseCase( prompt: string, abortSignal: AbortSignal ) {
 
     try {

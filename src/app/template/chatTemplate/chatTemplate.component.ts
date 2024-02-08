@@ -1,16 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-
-import {Message} from "../../interfaces";
-import {OpenAiService} from "../../services/openai.service";
-import {
-  ChatMessageComponent,
-  MyMessageComponent,
-  TextMessageBoxComponent,
-  TypingLoaderComponent
-} from "../../presentation/components";
-
+import { TextMessageEvent, TextMessageBoxEvent, TypingLoaderComponent, MyMessageComponent, ChatMessageComponent, TextMessageBoxComponent } from '@components/index';
+import { Message } from '@interfaces/message.interface';
+import { OpenAiService } from 'app/presentation/services/openai.service';
 
 @Component( {
   selector: 'app-chat-template',
@@ -22,10 +15,6 @@ import {
     MyMessageComponent,
     TypingLoaderComponent,
     TextMessageBoxComponent,
-    ChatMessageComponent,
-    TypingLoaderComponent,
-    TextMessageBoxComponent,
-    MyMessageComponent,
   ],
   templateUrl: './chatTemplate.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
