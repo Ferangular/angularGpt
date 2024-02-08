@@ -1,18 +1,20 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { MarkdownModule } from 'ngx-markdown';
 
 @Component( {
-  selector: 'app-chat-message',
+  selector: 'app-gpt-message-orthography',
   standalone: true,
   imports: [
-    MarkdownModule,
+
   ],
-  templateUrl: './chatMessage.component.html',
+  templateUrl: './gptMessageOrthography.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 } )
-export class ChatMessageComponent {
+export class GptMessageOrthographyComponent {
 
+  @Input({ required: true }) userScore!: number;
   @Input({ required: true }) text!: string;
+  @Input() errors: string[] = [];
+
 
 }

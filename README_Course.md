@@ -55,6 +55,14 @@
 * [Wallpapers Developer](https://drive.google.com/drive/folders/1ItU8rbSGJjnh2USOBGwaCo9nYKifPJ6m?usp=sharing)
 
 
+
+## ngx-markdown
+
+```bash
+# https://www.npmjs.com/package/ngx-markdown
+$ npm i ngx-markdown
+```
+
 ## Comunidad de Discord
 Los invitamos a que se unan a nuestra comunidad de estudiantes en Discord y habla con personas que también estan aprendiendo igual que tu sobre diversas tecnologías.
 
